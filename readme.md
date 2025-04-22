@@ -19,7 +19,8 @@ java -version
 Open a terminal and navigate to the folder containing your Java files. Then compile them:
 
 ```bash
-javac Task.java TaskManager.java Main.java
+javac taskTracker/*.java
+java taskTracker.Main
 ```
 
 ## ▶️ How to Use
@@ -27,7 +28,7 @@ javac Task.java TaskManager.java Main.java
 Run the app with:
 
 ```bash
-java Main [command] [arguments]
+java taskTracker.Main [command] [arguments]
 ```
 
 ## ✅ Command Examples
@@ -35,41 +36,41 @@ java Main [command] [arguments]
 ➕ Add a new task
 
 ```bash
-java Main add "Buy groceries"
+java taskTracker.Main add "Buy groceries"
 ```
 
 ### 🛠 Update a task's description
 
 ```bash
-java Main update 1 "Buy groceries and cook dinner"
+java taskTracker.Main update 1 "Buy groceries and cook dinner"
 ```
 
 ### 🗑 Delete a task
 
 ```bash
-java Main delete 1
+java taskTracker.Main delete 1
 ```
 
 ### 🔁 Change task status
 
 ```bash
-java Main mark-in-progress 1
-java Main mark-done 1
+java taskTracker.Main mark-in-progress 1
+java taskTracker.Main mark-done 1
 ```
 
 ### 📋 List tasks
 
 ```bash
-java Main list
-java Main list todo
-java Main list in-progress
-java Main list done
+java taskTracker.Main list
+java taskTracker.Main list todo
+java taskTracker.Main list in-progress
+java taskTracker.Main list done
 ```
 
 ### ❓ Show help
 
 ```bash
-java Main help
+java taskTracker.Main help
 ```
 
 ## 📁 Where are tasks stored?
